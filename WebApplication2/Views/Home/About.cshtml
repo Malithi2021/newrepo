@@ -1,0 +1,35 @@
+﻿
+@model List<personCollection.Models.Person>
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<title>Display</title>
+</html>
+{
+<div>
+    <table>
+        @{
+            foreach (var person in Model)
+            {
+                <tr>
+                    <td>Number: @person.No</td>
+                    <td>Name: @person.Name</td>
+                    <td>Age: @person.Age</td>
+                    <td>Department: @person.Dep</td>
+                    <td>Salary: @person.Sal</td>
+
+                </tr>
+
+            }
+        }
+    </table>
+
+</div>
+
+}
